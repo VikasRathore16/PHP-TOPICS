@@ -4,8 +4,13 @@
             "App\\AbstractClasses\\":"classes",
             "App\\InterfaceClasses\\":"classes",
             "App\\traitClasses\\":"classes",
-            "App\\MagicClasses\\":"classes"
-
+            "App\\MagicClasses\\":"classes",
+            "App\\Models\\":"models"
         }
+    },
+
+    "require": {
+        "paragonie/sodium_compat": "^1.17",
+        "mongodb/mongodb": "^1.12"
     }
 }

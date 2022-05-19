@@ -6,7 +6,12 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Symfony\\Polyfill\\Php80\\' => array($vendorDir . '/symfony/polyfill-php80'),
+    'PackageVersions\\' => array($vendorDir . '/composer/package-versions-deprecated/src/PackageVersions'),
+    'MongoDB\\' => array($vendorDir . '/mongodb/mongodb/src'),
+    'Jean85\\' => array($vendorDir . '/jean85/pretty-package-versions/src'),
     'App\\traitClasses\\' => array($baseDir . '/classes'),
+    'App\\Models\\' => array($baseDir . '/models'),
     'App\\MagicClasses\\' => array($baseDir . '/classes'),
     'App\\InterfaceClasses\\' => array($baseDir . '/classes'),
     'App\\AbstractClasses\\' => array($baseDir . '/classes'),

@@ -1,51 +1,44 @@
 <?php
-// require('./vendor/autoload.php');
+require('./vendor/autoload.php');
 
+use App\Models\Student;
+use App\Models\Teacher;
 
-function __autoload($class)
-{
-    // Adapt this depending on your directory structure
-    // echo $class."<br>";
-    $parts = explode('\\', $class);
-    // print_r($parts);
-    // echo "<br>";
-    require "./classes/" . end($parts) . '.php';
-}
+$mongo = new MongoDB\Client("mongodb+srv://cluster0.gbzl3.mongodb.net/myFirstDatabase", array("username" => 'root', "password" => "Vikas@1998"));
 
-
-use App\AbstractClasses\Audi;
-use App\InterfaceClasses\Cat;
-use App\MagicClasses\MagicClass;
-
+$student = new Student($mongo);
+$student->setRollNo(11);
+$student->setName('Hello');
+$student->setAddress('33, Vishwash Khnd, GomtiNagar Lucknow');
 echo "<pre>";
-$audi = new Audi("Audi");
-echo $audi->intro();
-echo "<br>";
+// print_r($student->getName());
+print_r($student->save());
+// print_r($student->update());
+// print_r($student->load(3));
+// print_r($student->delete());
 
 
-$animal = new Cat();
-$animal->makeSound();
-echo "<br>";
-$animal->fun();
-echo "<br>";
-Cat::welcome();
+$teacher = new Teacher($mongo);
+$teacher->setId(11);
+$teacher->setName('Sir');
+$teacher->setAddress('33, Vishwash Khnd, GomtiNagar Lucknow');
+echo "<pre>";
+// print_r($teacher->getName());
+print_r($teacher->save());
+// print_r($teacher->update());
+// print_r($teacher->load(3));
+// print_r($teacher->delete());
 
-$animal->printFormatted("Hello world", "exclaim");
-$animal->printFormatted("Hello world", "ask");
 
-$magic = new MagicClass();
-$serializedStr = serialize($magic);
-echo "<br>";
-// echo $magic;
-// echo $magic(2);
-// print_r($magic);
-echo "<br>";
-// print_r($serializedStr);
-echo "<br>";
-// print_r(unserialize($serializedStr));
-echo "<br>";
-print_r($magic->setName('Vikas'));
-print_r($magic->setAddress('Rid'));
-print_r($magic->getAddress('Rid'));
+
+
+
+
+
+
+
+
+
+
 
 

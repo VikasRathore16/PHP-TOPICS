@@ -54,4 +54,13 @@ class MagicClass
             return $this->details[$name];
         }
     }
+    public function save()
+    {
+        $collections = $this->connection->selectCollection('Phalcon', $this->table);
+        $collections = $collections->insertOne(
+            $this->attributes
+        );
+
+        return $collections;
+    }
 }

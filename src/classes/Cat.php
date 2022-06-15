@@ -1,10 +1,10 @@
 <?php
 
-namespace App\InterfaceClasses;
+// namespace App\InterfaceClasses;
 
-use App\InterfaceClasses\InterfaceClass;
+// use App\InterfaceClasses\InterfaceClass;
 
-use App\traitClasses\traitClass;
+// use App\traitClasses\traitClass;
 
 class Cat implements InterfaceClass
 {
@@ -37,5 +37,5 @@ class Cat implements InterfaceClass
     {
         echo "Hello World! Static Method<br>";
     }
-    use traitClass;
+    use \traitClass;
 }

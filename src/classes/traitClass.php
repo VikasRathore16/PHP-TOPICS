@@ -1,6 +1,6 @@
 <?php
 
-namespace App\traitClasses;
+// namespace App\traitClasses;
 
 trait traitClass
 {

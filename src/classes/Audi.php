@@ -1,8 +1,8 @@
 <?php
 
-namespace App\AbstractClasses;
+// namespace App\AbstractClasses;
 
-use App\AbstractClasses\AbstractClass;
+// use App\AbstractClasses\AbstractClass;
 
 class Audi extends AbstractClass
 {

@@ -1,5 +1,5 @@
 <?php
-namespace App\InterfaceClasses;
+// namespace App\InterfaceClasses;
 
 
 interface InterfaceClass {

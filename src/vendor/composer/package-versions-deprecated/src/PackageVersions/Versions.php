@@ -39,7 +39,7 @@ final class Versions
   'paragonie/random_compat' => 'v9.99.100@996434e5492cb4c3edcb9168db6fbb1359ef965a',
   'paragonie/sodium_compat' => 'v1.17.1@ac994053faac18d386328c91c7900f930acadf1e',
   'symfony/polyfill-php80' => 'v1.25.0@4407588e0d3f1f52efb65fbe92babe41f37fe50c',
-  '__root__' => 'dev-main@a16f899dbcec04ad40594fca0ab5e5246173f767',
+  '__root__' => 'No version set (parsed as 1.0.0)@',
 );
 
     private function __construct()

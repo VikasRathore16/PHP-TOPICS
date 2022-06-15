@@ -1,6 +1,6 @@
 <?php
 
-namespace App\MagicClasses;
+// namespace App\MagicClasses;
 
 class MagicClass
 {
@@ -19,7 +19,7 @@ class MagicClass
     }
     public function __invoke($x)
     {
-        var_dump($x . "The __invoke() method is called when a script tries to call an object as a function.<br>");
+        return ($x . "<br>The __invoke() method is called when a script tries to call an object as a function.<br>");
     }
     public function __sleep()
     {

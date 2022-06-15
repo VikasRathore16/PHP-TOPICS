@@ -1,6 +1,6 @@
 <?php
 
-namespace App\AbstractClasses;
+// namespace App\AbstractClasses;
 
 abstract class AbstractClass
 {
